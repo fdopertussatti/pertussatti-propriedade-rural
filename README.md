@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pertussatti - Propriedade Rural
 
-## Getting Started
+Site institucional para apresentação e venda da propriedade rural em Coronel Martins, Santa Catarina.
 
-First, run the development server:
+## Tecnologias
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+
+## Desenvolvimento
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy na Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O projeto está pronto para deploy. Conecte o repositório à Vercel e faça o deploy.
 
-## Learn More
+## Configuração
 
-To learn more about Next.js, take a look at the following resources:
+1. **WhatsApp e contato**: Edite `src/app/lib/constants.ts` com telefone, email e WhatsApp reais.
+2. **Imagem do Hero**: Adicione `hero-aerea.jpg` em `public/images/` para a foto aérea da propriedade.
+3. **Galeria**: Adicione fotos em `public/images/gallery/` com nomes: `vista-aerea.jpg`, `aviarios.jpg`, `acudes.jpg`, etc.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estrutura de pastas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/app/components/` – Componentes reutilizáveis (Navbar)
+- `src/app/sections/` – Seções da página
+- `src/app/lib/` – Constantes e utilitários
+- `public/images/` – Imagens
+- `public/videos/` – Vídeos (tour virtual, etc.)
 
-## Deploy on Vercel
+## Extras planejados
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Inserção de vídeo da propriedade
+- Tour virtual
+- Download de PDF com detalhes técnicos
