@@ -1,0 +1,14 @@
+---
+description: Quando o usuário digitar "1", executar git add, commit e push
+alwaysApply: true
+---
+
+# Atalho: "1" = Commit e Push
+
+Quando o usuário enviar **apenas "1"** (ou "1.") como mensagem, interprete como solicitação para:
+
+1. `git add -A`
+2. `git commit -m "..."` (mensagem genérica ou baseada nas mudanças)
+3. `git push`
+
+Execute esses comandos sem pedir confirmação.
