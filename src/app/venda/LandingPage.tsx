@@ -993,7 +993,7 @@ export default function LandingPage() {
               Falar no WhatsApp
             </a>
             <a
-              href={`tel:+55${SITE_CONFIG.whatsapp}`}
+              href={`tel:+${SITE_CONFIG.whatsapp}`}
               className="flex w-full max-w-sm items-center justify-center gap-3 rounded-2xl border-2 border-slate-600 px-10 py-5 text-xl font-bold text-white transition-colors hover:border-slate-500 hover:bg-slate-800/50 sm:w-auto"
             >
               <Phone className="h-7 w-7" strokeWidth={2} />

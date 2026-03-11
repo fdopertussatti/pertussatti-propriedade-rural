@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-slate-900">Contato</h3>
             <a
-              href={`tel:+55${SITE_CONFIG.whatsapp}`}
+              href={`tel:+${SITE_CONFIG.whatsapp}`}
               className="mt-2 flex items-center gap-2 text-slate-600 hover:text-primary"
             >
               <Phone className="h-5 w-5 shrink-0" strokeWidth={1.5} />

@@ -2,9 +2,9 @@ export const SITE_CONFIG = {
   name: "Pertussatti",
   domain: "pertussatti.com",
   location: "Coronel Martins, Santa Catarina",
-  phone: "+55 49 99999-9999",
+  phone: "+55 49 98845-0198",
   email: "contato@pertussatti.com",
-  whatsapp: "5549999999999",
+  whatsapp: "5549988450198",
 };
 
 export const NAV_LINKS = [

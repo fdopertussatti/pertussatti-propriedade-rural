@@ -16,7 +16,7 @@ const contactCards = [
     icon: Phone,
     title: "Telefone",
     desc: SITE_CONFIG.phone,
-    href: `tel:+55${SITE_CONFIG.whatsapp}`,
+    href: `tel:+${SITE_CONFIG.whatsapp}`,
   },
   {
     icon: Mail,
