@@ -6,13 +6,13 @@ import { Sun, Zap, Power } from "lucide-react";
 const items = [
   {
     icon: Sun,
-    title: "Usina fotovoltaica",
-    desc: "57 módulos · 4.600 a 4.900 kWh/mês",
+    title: "Usina fotovoltaica on-grid",
+    desc: "57 módulos · 4.600 a 4.900 kWh/mês · Excedente vira créditos na concessionária",
   },
   {
     icon: Zap,
-    title: "Energia trifásica",
-    desc: "Rede elétrica trifásica disponível",
+    title: "Rede trifásica próxima",
+    desc: "Rede da concessionária a apenas 1,7 km — facilidade para extensão e backup",
   },
   {
     icon: Power,
@@ -33,8 +33,8 @@ export default function EnergySection() {
             Energia e Infraestrutura
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            Autossuficiência energética com usina solar, rede trifásica e
-            gerador de backup.
+            Usina solar on-grid (excedente vira créditos), rede trifásica a 1,7 km
+            e gerador de backup. Internet Starlink instalada.
           </p>
         </div>
         <div className="mt-16 grid gap-8 md:grid-cols-3">

@@ -15,10 +15,10 @@ export default function LocationSection() {
           </h2>
           <p className="mt-4 flex items-center justify-center gap-2 text-slate-600">
             <MapPin className="h-5 w-5 text-primary" strokeWidth={1.5} />
-            A apenas 3 km do centro de Coronel Martins, SC
+            A 3 km do centro e 300 m da rodovia SC-482, Coronel Martins, SC
           </p>
           <p className="mt-2 text-base text-slate-500">
-            Localização com vantagens frente a eventos climáticos — posição que atenua o impacto de extremos na produção.
+            Apenas 300 m da rodovia SC-482 — fácil acesso. Posição que atenua o impacto de eventos climáticos na produção.
           </p>
         </div>
         <div className="mt-12 overflow-hidden rounded-xl border border-slate-200 shadow-lg">

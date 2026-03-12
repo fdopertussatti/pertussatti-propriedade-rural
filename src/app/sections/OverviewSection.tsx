@@ -11,9 +11,9 @@ import {
 
 const activities = [
   { icon: Factory, label: "Produção integrada", desc: "Cooperativa Aurora via Cooperalfa" },
-  { icon: Building2, label: "Infraestrutura completa", desc: "Estrutura pronta para produção" },
+  { icon: Building2, label: "Infraestrutura completa", desc: "Máquinas, internet Starlink e mais" },
   { icon: Droplets, label: "Abundância de água", desc: "3 fontes naturais e reservatórios" },
-  { icon: Sun, label: "Energia solar", desc: "Usina fotovoltaica própria" },
+  { icon: Sun, label: "Energia solar on-grid", desc: "57 módulos · Créditos na concessionária" },
   { icon: Zap, label: "Gerador de backup", desc: "Bambozzi 80 kVA" },
 ];
 
@@ -37,7 +37,7 @@ export default function OverviewSection() {
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
               Com produção avícola integrada à Aurora via Cooperalfa,
               infraestrutura completa, excelente disponibilidade de água, energia
-              solar e gerador.
+              solar on-grid, gerador e internet Starlink.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">

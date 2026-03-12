@@ -45,12 +45,12 @@ const VALUE_PROPS = [
   },
   {
     icon: Sun,
-    title: "Energia solar",
-    text: "Autossuficiência energética",
-    desc: "Usina fotovoltaica com 57 módulos, geração de 4.600 a 4.900 kWh/mês. Reduza ou elimine a conta de luz. Energia trifásica disponível em toda a propriedade.",
+    title: "Energia solar on-grid",
+    text: "Sistema on-grid com créditos de energia",
+    desc: "Usina fotovoltaica com 57 módulos em sistema on-grid — geração de 4.600 a 4.900 kWh/mês. O excedente é injetado na rede e vira créditos que abatem a conta. Mais eficiente que off-grid, sem necessidade de baterias, e fornecimento contínuo mesmo à noite ou em dias nublados. Rede trifásica da concessionária a apenas 1,7 km — facilidade para extensão ou backup.",
     images: [
-      { src: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80", alt: "Usina solar", carouselDesc: "57 módulos de alta potência. Geração de 4.600 a 4.900 kWh/mês." },
-      { src: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80", alt: "Rede trifásica", carouselDesc: "Energia trifásica em toda a propriedade. Autossuficiência energética." },
+      { src: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80", alt: "Usina solar", carouselDesc: "57 módulos em sistema on-grid. Excedente vira créditos de energia na concessionária." },
+      { src: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80", alt: "Rede trifásica", carouselDesc: "Rede trifásica da concessionária a 1,7 km — proximidade que facilita extensão e reduz custos." },
     ],
   },
   {
@@ -66,11 +66,11 @@ const VALUE_PROPS = [
   {
     icon: Zap,
     title: "Infraestrutura completa",
-    text: "Gerador + máquinas + equipamentos",
-    desc: "Gerador Bambozzi 80 kVA com motor Mercedes-Benz. Trator Valmet, picador, desidratador (que produz ração para a piscicultura dos açudes), espalhador de cal. Tudo incluso — chegue e opere.",
+    text: "Gerador + máquinas + internet Starlink",
+    desc: "Gerador Bambozzi 80 kVA com motor Mercedes-Benz. Trator Valmet, picador de lenha hidráulico de alta performance, desidratador (que produz ração para a piscicultura dos açudes), espalhador de cal. Internet Starlink instalada — conectividade de alta qualidade em área rural. Tudo incluso — chegue e opere.",
     images: [
       { src: "https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=800&q=80", alt: "Gerador", carouselDesc: "Gerador Bambozzi 80 kVA com motor Mercedes-Benz 1113. Backup garantido." },
-      { src: "https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=800&q=80", alt: "Máquinas", carouselDesc: "Trator Valmet 62 ID, picador hidráulico, desidratador (produz ração para a piscicultura dos açudes), espalhador de cal. Tudo incluso." },
+      { src: "https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=800&q=80", alt: "Máquinas", carouselDesc: "Trator Valmet 62 ID, picador de lenha hidráulico de alta performance, desidratador, espalhador de cal. Internet Starlink instalada — conectividade em área rural." },
     ],
   },
 ];
@@ -133,7 +133,7 @@ const AERIAL_LABELS = [
   { id: "agrícola", x: 70, y: 35, text: "Área agrícola", subtext: "4–8 ha", side: "left" as const },
   { id: "eucalipto", x: 15, y: 30, text: "Eucaliptos", subtext: "3 ha", side: "right" as const },
   { id: "cisterna", x: 50, y: 55, text: "Cisterna", subtext: "1,6 milhões de litros", side: "right" as const },
-  { id: "solar", x: 80, y: 75, text: "Energia solar", subtext: "57 módulos", side: "left" as const },
+  { id: "solar", x: 80, y: 75, text: "Energia solar on-grid", subtext: "57 módulos · Rede a 1,7 km", side: "left" as const },
 ];
 // Limite da propriedade — pontos do polígono em % (0-100). Ajuste conforme foto real.
 const BOUNDARY_POINTS = "8,12 92,8 95,88 12,92 8,12";
@@ -286,7 +286,8 @@ export default function LandingPage() {
             className="mx-auto mt-6 max-w-2xl text-xl text-slate-200"
           >
             14,5 hectares produtivos com aviários em operação, água abundante e
-            energia solar. Tudo pronto para você assumir e gerar resultados.
+            energia solar on-grid. Tudo pronto para você assumir e gerar
+            resultados.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -341,9 +342,10 @@ export default function LandingPage() {
                 Chegue e comece a produzir. Tudo está pronto.
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-slate-600">
-                Aviários reformados, trator Valmet, máquinas, gerador e energia
-                solar. Não é preciso investir em estrutura — apenas assumir a
-                operação e gerar receita com a produção integrada à Aurora.
+                Aviários reformados, trator Valmet, máquinas, gerador, energia
+                solar on-grid e internet Starlink. Não é preciso investir em
+                estrutura — apenas assumir a operação e gerar receita com a
+                produção integrada à Aurora.
               </p>
               <CtaButton href={whatsappUrl} className="mt-10 w-full max-w-md">
                 Quero ver a propriedade
@@ -851,7 +853,7 @@ export default function LandingPage() {
               Localização
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-slate-600">
-              Linha Formosa, Coronel Martins — 3 km do centro · Localização com vantagens frente a eventos climáticos
+              Linha Formosa, Coronel Martins — 3 km do centro · 300 m da SC-482
             </p>
           </div>
           <motion.div
@@ -925,10 +927,10 @@ export default function LandingPage() {
               "Piscicultura nos açudes — os dois açudes estão em produção de peixes e representam fonte de renda adicional. O Açude 1 possui aerador, aumentando a produtividade. A ração pode ser produzida pelo desidratador da propriedade, reduzindo custos e criando sinergia entre as atividades.",
               <>Abundância de água — 3 fontes naturais ativas mesmo em estiagem, 2 açudes em produção, reservatório para gado e cisterna de <strong>1,6 milhões de litros</strong>. Segurança hídrica total.</>,
               "Uso do solo em conformidade — reserva legal regularizada, cerca de 3 ha de eucaliptos (silvicultura) e áreas preparadas para criação de gado, com reservatório dedicado. Diversificação e aproveitamento integral.",
-              "Infraestrutura completa incluída — trator Valmet, picador, desidratador (produz ração para a piscicultura), espalhador de cal e demais máquinas. Chegue e opere.",
-              "Autossuficiência energética — usina solar com 57 módulos (4.600 a 4.900 kWh/mês) e gerador Bambozzi 80 kVA. Reduza ou elimine a conta de luz.",
+              "Infraestrutura completa incluída — trator Valmet, picador de lenha hidráulico de alta performance, desidratador (produz ração para a piscicultura), espalhador de cal e internet Starlink. Conectividade de alta qualidade em área rural. Chegue e opere.",
+              "Energia solar on-grid — usina com 57 módulos (4.600 a 4.900 kWh/mês). Excedente vira créditos na concessionária, sem baterias, fornecimento contínuo. Rede trifásica a apenas 1,7 km facilita extensão e backup. Gerador Bambozzi 80 kVA como reserva.",
               "Residência pronta para morar — casa de 120 m², 3 quartos, 2 banheiros, varandas e pomar. Ideal para quem quer viver na propriedade.",
-              "Localização privilegiada — Linha Formosa, Coronel Martins, a apenas 3 km do centro. Fácil acesso e proximidade com comércio e serviços. Posição favorável em relação a eventos climáticos, reduzindo riscos de geadas e extremos para a produção.",
+              "Localização privilegiada — Linha Formosa, Coronel Martins, a apenas 3 km do centro e 300 m da rodovia SC-482. Fácil acesso e proximidade com comércio e serviços. Posição favorável em relação a eventos climáticos, reduzindo riscos de geadas e extremos para a produção.",
             ].map((item, i) => (
               <motion.li
                 key={`investir-${i}`}
@@ -958,7 +960,7 @@ export default function LandingPage() {
             Linha Formosa, Coronel Martins — Santa Catarina
           </h2>
           <p className="mt-4 text-xl text-slate-300">
-            A apenas 3 km do centro · Acesso fácil · Região de produção consolidada
+            A apenas 3 km do centro · 300 m da rodovia SC-482 · Acesso fácil
           </p>
           <p className="mt-3 text-base text-slate-400">
             Localização com vantagens climáticas — posição que atenua o impacto de eventos extremos na produção.
